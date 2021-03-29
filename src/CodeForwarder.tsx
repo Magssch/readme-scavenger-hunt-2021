@@ -28,7 +28,7 @@ const CodeForwarder: React.FC<CodeForwarderProps> = ({ code }) => {
 
   useEffect(() => {
     requestRiddle(code);
-  }, []);
+  }, [code]);
 
   return (
     <div>{requestSuccessful ? apiResponse : code + " is not a valid code"}</div>
