@@ -16,6 +16,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "serve": "cd functions && npm run build && cd .. && npm run build && firebase serve",
+    "deploy": "react-scripts build && firebase deploy --only hosting",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
