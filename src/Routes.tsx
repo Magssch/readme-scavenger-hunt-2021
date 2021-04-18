@@ -14,7 +14,9 @@ function Routes() {
         <Route
           exact
           path="/:code/"
-          render={(props) => <CodeForwarder code={props.match.params.code} />}
+          render={(props) => (
+            <CodeForwarder paramCode={props.match.params.code} />
+          )}
         />
       </Switch>
     </Router>
