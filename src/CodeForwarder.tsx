@@ -1,5 +1,22 @@
 import React, { useEffect, useState } from "react";
 
+import Card from "@material-ui/core/Card";
+import CardContent from "@material-ui/core/CardContent";
+import styled from "styled-components";
+
+const StyledCard = styled(Card)`
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  margin: auto;
+  width: 95%;
+  height: 60%;
+  display: flex;
+`;
+
+const StyledCardContent = styled(CardContent)`
+  max-width: 600px;
+  margin: 0 auto;
+`;
+
 interface CodeForwarderProps {
   code: string;
 }
@@ -31,7 +48,13 @@ const CodeForwarder: React.FC<CodeForwarderProps> = ({ code }) => {
   }, [code]);
 
   return (
-    <div>{requestSuccessful ? apiResponse : code + " is not a valid code"}</div>
+    <StyledCard>
+      <StyledCardContent>
+        <h1 style={{ fontFamily: "Town31Dim" }}>readme Scavenger Hunt 2021</h1>
+        <br />
+        {requestSuccessful ? apiResponse : code + " is not a valid code"}
+      </StyledCardContent>
+    </StyledCard>
   );
 };
 
