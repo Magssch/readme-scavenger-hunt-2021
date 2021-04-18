@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import styled from "styled-components";
+import LinearProgress from "@material-ui/core/LinearProgress";
 
 const StyledCard = styled(Card)`
   background-color: rgba(255, 255, 255, 0.8) !important;
@@ -15,6 +16,8 @@ const StyledCard = styled(Card)`
 const StyledCardContent = styled(CardContent)`
   max-width: 600px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 `;
 
 interface CodeForwarderProps {
@@ -22,6 +25,7 @@ interface CodeForwarderProps {
 }
 
 const CodeForwarder: React.FC<CodeForwarderProps> = ({ code }) => {
+  const [loading, setLoading] = useState<boolean>(true);
   const [apiResponse, setApiResponse] = useState<string>("");
   const [requestSuccessful, setRequestSuccessful] = useState<boolean>(false);
 
@@ -39,8 +43,12 @@ const CodeForwarder: React.FC<CodeForwarderProps> = ({ code }) => {
       .then((response) => {
         setApiResponse(response.message);
         setRequestSuccessful(true);
+        setLoading(false);
       })
-      .catch((err) => console.log(err));
+      .catch((err) => {
+        setRequestSuccessful(false);
+        setLoading(false);
+      });
   };
 
   useEffect(() => {
@@ -51,8 +59,15 @@ const CodeForwarder: React.FC<CodeForwarderProps> = ({ code }) => {
     <StyledCard>
       <StyledCardContent>
         <h1 style={{ fontFamily: "Town31Dim" }}>readme Scavenger Hunt 2021</h1>
-        <br />
-        {requestSuccessful ? apiResponse : code + " is not a valid code"}
+        <div style={{ margin: "5rem 0 auto 0" }}>
+          {loading ? (
+            <LinearProgress />
+          ) : requestSuccessful ? (
+            apiResponse
+          ) : (
+            code + " is not a valid code"
+          )}
+        </div>
       </StyledCardContent>
     </StyledCard>
   );
