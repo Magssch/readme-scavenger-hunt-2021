@@ -11,6 +11,7 @@ const StyledCard = styled(Card)`
   background-color: rgba(255, 255, 255, 0.8) !important;
   margin: auto;
   width: 95%;
+  max-width: 700px;
   min-height: 60%;
   display: flex;
 `;
@@ -18,6 +19,8 @@ const StyledCard = styled(Card)`
 const StyledCardContent = styled(CardContent)`
   max-width: 600px;
   margin: 1rem auto;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
   display: flex;
   flex-direction: column;
 `;
