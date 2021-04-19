@@ -35,7 +35,7 @@ const CodeForwarder: React.FC<CodeForwarderProps> = ({ paramCode }) => {
   const [loaded, setLoaded] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(false);
   const [apiResponse, setApiResponse] = useState<string>("");
-  const [code, setCode] = useState<string>(paramCode);
+  const [code] = useState<string>(paramCode);
   const [previousCode, setPreviousCode] = useState<string>("");
   const [requestSuccessful, setRequestSuccessful] = useState<boolean>(false);
 
