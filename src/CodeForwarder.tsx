@@ -11,7 +11,7 @@ const StyledCard = styled(Card)`
   background-color: rgba(255, 255, 255, 0.8) !important;
   margin: auto;
   width: 95%;
-  height: 60%;
+  min-height: 60%;
   display: flex;
 `;
 
