@@ -78,7 +78,15 @@ const CodeForwarder: React.FC<CodeForwarderProps> = ({ paramCode }) => {
           ) : !loaded ? (
             "Bekreft forrige kode for å gå videre."
           ) : requestSuccessful ? (
-            apiResponse
+            <>
+              <b>{apiResponse}</b>
+              <br />
+              <br />
+              <i>
+                Noter deg koden <b>{code}</b> og fyll inn denne når du finner
+                neste QR-kode.
+              </i>
+            </>
           ) : (
             "Feil kode eller ugyldig URL."
           )}

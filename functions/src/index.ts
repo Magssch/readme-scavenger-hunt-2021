@@ -19,25 +19,20 @@ const validCodes: {
   [key: string]: string;
 } = {
   X48V9B2U:
-    "Du fant den første!<br/><br/>Skriv inn koden <b>X48V9B2U</b> når du finner QR-koden.",
+    "Gå til A3-125 og finn Saurons øye. Ved foten av tårnet utenfor vil du finne en QR-kode to rule them all.",
   WRLM548B:
-    "Gå til A3-125 og finn Saurons øye. Ved foten av tårnet utenfor vil du finne en QR-kode to rule them all.<br/><br/>Skriv inn koden <b>WRLM548B</b> når du finner QR-koden.",
+    "Finn de store brillene der du kan se deg selv i mange forskjellige farger. Ta på deg brillene og finn neste QR-kode.",
   TLK6P9DM:
-    "Finn de store brillene der du kan se deg selv i mange forskjellige farger. Ta på deg brillene og finn neste QR-kode.<br/><br/>Skriv inn koden <b>TLK6P9DM</b> når du finner QR-koden.",
-  AHKGDHMC:
-    "Ta temperaturen på El-bygget. Er du frisk kan du fortsette jakten.<br/><br/>Skriv inn koden <b>AHKGDHMC</b> når du finner QR-koden.",
+    "Ta temperaturen på El-bygget. Er du frisk kan du fortsette jakten.",
+  AHKGDHMC: "Sted: Ohma Electra. Hint: 12.",
   THP3UGP8:
-    "Sted: Ohma Electra. Hint: 12.<br/><br/>Skriv inn koden <b>THP3UGP8</b> når du finner QR-koden.",
-  QFAQFNNT:
-    "Besøk Galtvort og ta trappen til venstre før biblioteket, før trappen flytter seg. Finn ut hvorfor du ikke kan passere inn i midtfløyen.<br/><br/>Skriv inn koden <b>QFAQFNNT</b> når du finner QR-koden.",
-  YK55RUCT:
-    "Hent posten til Caverion under bordtennisbordet på stripa.<br/><br/>Skriv inn koden <b>YK55RUCT</b> når du finner QR-koden.",
-  A2MLB722:
-    "Stripa kan være et farlig sted. Finn beskyttelse!<br/><br/>Skriv inn koden <b>A2MLB722</b> når du finner QR-koden.",
-  S3URMC93:
-    "Finn U4 og søk tilflukt.<br/><br/>Skriv inn koden <b>S3URMC93</b> når du finner QR-koden.",
+    "Besøk Galtvort og ta trappen til venstre før biblioteket, før trappen flytter seg. Finn ut hvorfor du ikke kan passere inn i midtfløyen.",
+  QFAQFNNT: "Hent posten til Caverion under bordtennisbordet på stripa.",
+  YK55RUCT: "Stripa kan være et farlig sted. Finn beskyttelse!",
+  A2MLB722: "Gå inn trappen til A3 og besøk Harry Potter på rommet sitt.",
+  S3URMC93: "Finn U4 og søk tilflukt.",
   K4X3M7PD:
-    "Gå inn trappen til A3 og besøk Harry Potter på rommet sitt.<br/><br/>Skriv inn koden <b>K4X3M7PD</b> når du finner QR-koden.",
+    "Gratulerer! Du har funnet alle QR-kodene! Ta bilde av deg ved QR-koden og send dette til scavengerhunt@abakus.no for å være med i trekningen av et gavekort på 500,-!",
 };
 
 export const checkCode = functions.https.onRequest(
