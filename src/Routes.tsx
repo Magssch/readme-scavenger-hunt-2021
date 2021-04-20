@@ -2,7 +2,8 @@ import React from "react";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import CodeForwarder from "./components/CodeForwarder";
 import LandingPage from "./pages/LandingPage";
-import Start from "./pages/Start";
+import StartPage from "./pages/StartPage";
+import RulesPage from "./pages/RulesPage";
 import StatisticsPage from "./pages/StatisticsPage";
 
 function Routes() {
@@ -12,10 +13,13 @@ function Routes() {
         <Route exact path="/">
           <LandingPage />
         </Route>
+        <Route exact path="/rules">
+          <RulesPage />
+        </Route>
         <Route exact path="/statistikk">
           <StatisticsPage />
         </Route>
-        <Route exact path="/8RREUV7M/" render={() => <Start />} />
+        <Route exact path="/8RREUV7M/" render={() => <StartPage />} />
         <Route
           exact
           path="/:code/"

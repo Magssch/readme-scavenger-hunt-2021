@@ -9,7 +9,7 @@ const db = admin.firestore();
 const previousCodes: {
   [key: string]: string;
 } = {
-  X48V9B2U: "X48V9B2U",
+  X48V9B2U: "8RREUV7M",
   WRLM548B: "X48V9B2U",
   TLK6P9DM: "WRLM548B",
   AHKGDHMC: "TLK6P9DM",
@@ -44,16 +44,17 @@ const validCodes: {
   WRLM548B:
     "Finn de store brillene der du kan se deg selv i mange forskjellige farger. Ta på deg brillene og finn neste QR-kode.",
   TLK6P9DM:
-    "Ta temperaturen på El-bygget. Er du frisk kan du fortsette jakten.",
+    "Ta temperaturen på El-bygget. Er du frisk så kan du fortsette jakten, ta deretter to steg til høyre og snu deg 90 grader mot venstre.",
   AHKGDHMC: "Sted: Ohma Electra. Hint: 12.",
   THP3UGP8:
-    "Besøk Galtvort og ta trappen til venstre før biblioteket, før trappen flytter seg. Finn ut hvorfor du ikke kan passere inn i midtfløyen.",
+    "Besøk Galtvort og ta trappen til venstre før biblioteket, før trappen flytter seg. Finn ut hvorfor du ikke kan passere inn i midtfløyen. Kanskje ligger det noe annet bak begrunnelsen.",
   QFAQFNNT: "Hent posten til Caverion under bordtennisbordet på stripa.",
-  YK55RUCT: "Stripa kan være et farlig sted. Finn beskyttelse!",
+  YK55RUCT:
+    "Stripa kan være et farlig sted. Finn beskyttelse og gjem deg under bordet!",
   A2MLB722: "Gå inn trappen til A3 og besøk Harry Potter på rommet sitt.",
   S3URMC93: "Finn U4 og søk tilflukt.",
   K4X3M7PD:
-    "Gratulerer! Du har funnet alle QR-kodene! Ta bilde av deg selv ved QR-koden og send dette til scavengerhunt@abakus.no for å være med i trekningen av et gavekort på 500,-!",
+    "Gratulerer! Du har funnet alle QR-kodene! Ta bilde av stedet hvor du fant siste QR-kode og send dette til scavengerhunt@abakus.no for å være med i trekningen av et gavekort på 500,-!",
 };
 
 export const checkCode = functions.https.onRequest(

@@ -20,13 +20,10 @@ const LandingPage = () => {
           margin: "auto",
         }}
       >
-        Velkommen til readmes store Scavenger Hunt! <br />
+        Velkommen til readmes store Scavenger hunt! <br />
         <br />
         <b>
-          <Link
-            to={"/8RREUV7M/"}
-            style={{ fontSize: "1.5rem", color: "black" }}
-          >
+          <Link to={"/rules"} style={{ fontSize: "1.75rem", color: "black" }}>
             Trykk her for å starte jakten
           </Link>
         </b>

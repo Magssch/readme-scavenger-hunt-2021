@@ -53,7 +53,7 @@ const CodeForwarder: React.FC<CodeForwarderProps> = ({ paramCode }) => {
         {loading ? (
           <LinearProgress />
         ) : !loaded ? (
-          "Bekreft forrige kode for å gå videre."
+          "Skriv inn passordet du fikk på forrige QR-kode her. Hvis du ikke har husket å notere deg dette kan du se i nettleserhistorikken din, passordet er de åtte siste tegnene i URL-en du ble sendt til."
         ) : requestSuccessful ? (
           <>
             <b>{apiResponse}</b>
@@ -62,8 +62,16 @@ const CodeForwarder: React.FC<CodeForwarderProps> = ({ paramCode }) => {
                 <br />
                 <br />
                 <i>
-                  Noter deg koden <b>{code}</b> og fyll inn denne når du finner
-                  neste QR-kode.
+                  MERK! Noter deg passordet{" "}
+                  <span
+                    style={{
+                      textDecoration: "underline",
+                      fontWeight: "bolder",
+                    }}
+                  >
+                    {code}
+                  </span>{" "}
+                  og fyll inn dette når du finner neste QR-kode.
                 </i>
               </>
             ) : (
@@ -84,12 +92,12 @@ const CodeForwarder: React.FC<CodeForwarderProps> = ({ paramCode }) => {
             )}
           </>
         ) : (
-          "Feil kode eller ugyldig URL."
+          "Feil passord eller ugyldig URL."
         )}
       </div>
       <TextField
         id="outlined-basic"
-        label="Skriv inn forrige kode"
+        label="Passord (ABCDEFGH)"
         variant="outlined"
         disabled={loading}
         value={previousCode}
