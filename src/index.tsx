@@ -4,10 +4,22 @@ import "./index.css";
 import Routes from "./Routes";
 import reportWebVitals from "./reportWebVitals";
 import "./assets/fonts/Town31Dim-Black.ttf";
+import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
+import grey from "@material-ui/core/colors/grey";
+
+const theme = createMuiTheme({
+  palette: {
+    primary: {
+      main: grey[900],
+    },
+  },
+});
 
 ReactDOM.render(
   <React.StrictMode>
-    <Routes />
+    <ThemeProvider theme={theme}>
+      <Routes />
+    </ThemeProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

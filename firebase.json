@@ -15,6 +15,7 @@
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       { "source": "/api/checkCode", "function": "checkCode" },
+      { "source": "/api/getStatistics", "function": "getStatistics" },
       {
         "source": "**",
         "destination": "/index.html"

@@ -1,14 +1,19 @@
 import React from "react";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
-import CodeForwarder from "./CodeForwarder";
-import Start from "./Start";
+import CodeForwarder from "./components/CodeForwarder";
+import LandingPage from "./pages/LandingPage";
+import Start from "./pages/Start";
+import StatisticsPage from "./pages/StatisticsPage";
 
 function Routes() {
   return (
     <Router>
       <Switch>
         <Route exact path="/">
-          <h1>404</h1>
+          <LandingPage />
+        </Route>
+        <Route exact path="/statistikk">
+          <StatisticsPage />
         </Route>
         <Route exact path="/8RREUV7M/" render={() => <Start />} />
         <Route
