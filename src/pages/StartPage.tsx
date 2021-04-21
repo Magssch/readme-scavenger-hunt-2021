@@ -6,8 +6,9 @@ const StartPage = () => {
     <Layout>
       <h3>
         For å finne første QR-kode må du først finne koordinatene til denne ved
-        hjelp av bildene i den tilhørende artikkelen i readme. Når du har løst
-        oppgaven kan du søke på koordinatene du har funnet i Google for å finne
+        hjelp av bildene i den tilhørende artikkelen i readme. Noen av tallene
+        finner du ikke nødvendigvis direkte på bildet. Når du har løst oppgaven
+        kan du søke på koordinatene du har funnet i Google for å finne
         lokasjonen til første QR-kode.
       </h3>
       <p>
@@ -21,11 +22,13 @@ const StartPage = () => {
         <h4>
           Latitudekoordinatene finner dere ved å se på bildet av kontoret:
         </h4>
-        <b>AA:</b> (Antall kontrollere)² - 1.
+        <b>AA:</b> (Antall kontrollere på bildet)² - 1.
         <br />
-        <b>BB:</b> ((Antall svarte ryggputer) x (Antall stikkontakter)) - 1
+        <b>BB:</b> ((Antall svarte ryggputer på bildet) x (Antall stikkontakter
+        på bildet)) - 1
         <br />
-        <b>CC:</b> (Antall flørter på veggen) x (Antall røde sofaputer)
+        <b>CC:</b> (Antall flørter på veggen på bildet) x (Antall røde sofaputer
+        på bildet)
         <br />
         <b>DD:</b> (Antall vokaler i tittelen på den største pokalen) x 8<br />
       </p>
