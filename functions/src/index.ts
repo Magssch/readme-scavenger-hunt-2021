@@ -41,19 +41,19 @@ const validCodes: {
   [key: string]: string;
 } = {
   X48V9B2U:
-    "Gå til A3-125 og finn Saurons øye. Ved foten av tårnet utenfor vil du finne en QR-kode to rule them all.",
+    "Gå til A3-125 og finn Saurons øye. 👁️ Ved foten av tårnet utenfor vil du finne en QR-kode to rule them all.",
   WRLM548B:
-    "Finn de store brillene der du kan se deg selv i mange forskjellige farger. Ta på deg brillene og finn neste QR-kode.",
+    "Finn de store brillene der du kan se deg selv i mange forskjellige farger. 👓 Ta på deg brillene og finn neste QR-kode.",
   TLK6P9DM:
-    "Ta temperaturen på El-bygget. Er du frisk så kan du fortsette jakten, ta deretter to steg til høyre og snu deg 90 grader mot venstre.",
-  AHKGDHMC: "Sted: Ohma Electra. Hint: 12.",
+    "Ta temperaturen på El-bygget. 🌡️ Er du frisk så kan du fortsette jakten, ta deretter to steg til høyre og snu deg 90 grader mot venstre.",
+  AHKGDHMC: "Sted: Ohma Electra. 🚂 Hint: 12.",
   THP3UGP8:
-    "Besøk Galtvort og ta trappen til venstre før biblioteket, før trappen flytter seg. Finn ut hvorfor du ikke kan passere inn i midtfløyen. Kanskje ligger det noe annet bak begrunnelsen.",
+    "Besøk Galtvort og ta trappen til venstre før biblioteket, før trappen flytter seg. 🏫 Finn ut hvorfor du ikke kan passere inn i midtfløyen. Kanskje ligger det noe annet bak begrunnelsen.",
   QFAQFNNT: "Hent posten til Caverion under bordtennisbordet på stripa.",
   YK55RUCT:
-    "Stripa kan være et farlig sted. Finn beskyttelse og gjem deg under bordet!",
-  A2MLB722: "Gå inn trappen til A3 og besøk Harry Potter på rommet sitt.",
-  S3URMC93: "Finn U4 og søk tilflukt.",
+    "Stripa kan være et farlig sted. 💋 Finn beskyttelse og gjem deg under bordet!",
+  A2MLB722: "Gå inn trappen til A3 og besøk Harry Potter på rommet sitt. 🪄",
+  S3URMC93: "Finn U4 og søk tilflukt. ⚠️",
   K4X3M7PD:
     "Gratulerer! Du har funnet alle QR-kodene! Ta bilde av stedet hvor du fant siste QR-kode og send dette til scavengerhunt@abakus.no for å være med i trekningen av et gavekort på 500,-!",
 };

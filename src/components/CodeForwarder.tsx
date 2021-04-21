@@ -60,7 +60,7 @@ const CodeForwarder: React.FC<CodeForwarderProps> = ({ paramCode }) => {
           </>
         ) : requestSuccessful ? (
           <>
-            <b>{apiResponse}</b>
+            <b style={{ fontSize: "1.5rem" }}>{apiResponse}</b>
             {showCurrentCode ? (
               <>
                 <br />
