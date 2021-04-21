@@ -13,13 +13,13 @@ function Routes() {
         <Route exact path="/">
           <LandingPage />
         </Route>
-        <Route exact path="/rules">
+        <Route exact path="/8RREUV7M">
           <RulesPage />
         </Route>
         <Route exact path="/statistikk">
           <StatisticsPage />
         </Route>
-        <Route exact path="/8RREUV7M" render={() => <StartPage />} />
+        <Route exact path="/start/8RREUV7M" render={() => <StartPage />} />
         <Route
           exact
           path="/:code/"

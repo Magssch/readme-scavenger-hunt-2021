@@ -24,7 +24,10 @@ const LandingPage = () => {
         Velkommen til readmes store Scavenger hunt! <br />
         <br />
         <b>
-          <Link to={"/rules"} style={{ fontSize: "1.75rem", color: "black" }}>
+          <Link
+            to={"/8RREUV7M"}
+            style={{ fontSize: "1.75rem", color: "black" }}
+          >
             Trykk her for å starte jakten
           </Link>
         </b>

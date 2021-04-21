@@ -30,7 +30,7 @@ const RulesPage = () => {
       >
         <b>
           <Link
-            to={"/8RREUV7M"}
+            to={"/start/8RREUV7M"}
             style={{ fontSize: "1.75rem", color: "black" }}
           >
             Gå til første oppgave
