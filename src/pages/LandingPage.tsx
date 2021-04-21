@@ -14,6 +14,7 @@ const LandingPage = () => {
           margin: "auto",
         }}
       />
+      <br />
       <p
         style={{
           textAlign: "center",
