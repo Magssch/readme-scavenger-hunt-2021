@@ -53,7 +53,11 @@ const CodeForwarder: React.FC<CodeForwarderProps> = ({ paramCode }) => {
         {loading ? (
           <LinearProgress />
         ) : !loaded ? (
-          "Skriv inn passordet du fikk på forrige QR-kode her. Hvis du ikke har husket å notere deg dette kan du se i nettleserhistorikken din, passordet er de åtte siste tegnene i URL-en du ble sendt til."
+          <p style={{ margin: "2rem 0" }}>
+            Skriv inn passordet du fikk på forrige QR-kode her. Hvis du ikke har
+            husket å notere deg dette kan du se i nettleserhistorikken din,
+            passordet er de åtte siste tegnene i URL-en du ble sendt til.
+          </p>
         ) : requestSuccessful ? (
           <>
             <b>{apiResponse}</b>

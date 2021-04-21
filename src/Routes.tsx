@@ -19,7 +19,7 @@ function Routes() {
         <Route exact path="/statistikk">
           <StatisticsPage />
         </Route>
-        <Route exact path="/8RREUV7M/" render={() => <StartPage />} />
+        <Route exact path="/8RREUV7M" render={() => <StartPage />} />
         <Route
           exact
           path="/:code/"
