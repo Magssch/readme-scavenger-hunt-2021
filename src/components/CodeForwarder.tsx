@@ -49,7 +49,7 @@ const CodeForwarder: React.FC<CodeForwarderProps> = ({ paramCode }) => {
   */
   return (
     <Layout>
-      <div style={{ margin: "2rem 0" }}>
+      <div style={{ margin: "3rem 0" }}>
         {loading ? (
           <LinearProgress />
         ) : !loaded ? (

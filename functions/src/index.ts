@@ -9,6 +9,7 @@ const db = admin.firestore();
 const previousCodes: {
   [key: string]: string;
 } = {
+  "8RREUV7M": "8RREUV7M",
   X48V9B2U: "8RREUV7M",
   WRLM548B: "X48V9B2U",
   TLK6P9DM: "WRLM548B",
