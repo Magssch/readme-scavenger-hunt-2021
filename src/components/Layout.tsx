@@ -6,7 +6,7 @@ import styled from "styled-components";
 const StyledCard = styled(Card)`
   background-color: rgba(255, 255, 255, 0.8) !important;
   margin: auto;
-  width: 95%;
+  width: 100%;
   max-width: 700px;
   min-height: 70%;
   display: flex;
