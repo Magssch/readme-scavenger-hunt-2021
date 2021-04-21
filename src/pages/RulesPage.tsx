@@ -21,6 +21,7 @@ const RulesPage = () => {
         <b>scavengerhunt[at]abakus.no</b>, så kan du fortsatt være med i
         trekningen! Vi kan også gi deg et hint dersom du ønsker det.
       </p>
+      <br />
       <p
         style={{
           textAlign: "center",
