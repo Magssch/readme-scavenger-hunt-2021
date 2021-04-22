@@ -27,8 +27,8 @@ const StartPage = () => {
         <b>BB:</b> ((Antall svarte ryggputer på bildet) x (Antall stikkontakter
         på bildet)) - 1
         <br />
-        <b>CC:</b> (Antall flørter på veggen på bildet) x (Antall røde sofaputer
-        på bildet)
+        <b>CC:</b> (Antall midtsidebilder på veggen på bildet) x (Antall røde
+        sofaputer på bildet)
         <br />
         <b>DD:</b> (Antall vokaler i tittelen på den største pokalen) x 8<br />
       </p>
