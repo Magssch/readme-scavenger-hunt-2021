@@ -6,15 +6,15 @@ const RulesPage = () => {
   return (
     <Layout>
       <p>
-        <h2>Viktig, les dette!</h2>
-        <h3>
+        <h1>Viktig, les dette!</h1>
+        <h2>
           Konkurransen er dessverre over for i år. Takk til de som deltok,
           kanskje vi jaktes til neste år?
-        </h3>
-        <h2>
+        </h2>
+        <h3>
           Du kan fortsatt prøve å finne første kode ved å løse oppgaven på neste
           side.
-        </h2>
+        </h3>
       </p>
       <br />
       <p
