@@ -41,7 +41,7 @@ const validCodes: {
   [key: string]: string;
 } = {
   X48V9B2U:
-    "Gå til A3-125 og finn Saurons øye. 👁️ Ved foten av tårnet utenfor vil du finne en QR-kode to rule them all.",
+    "Gå til A3-125, se ut av vinduet, og finn Saurons øye. 👁️ Ved foten av tårnet utenfor vil du finne en QR-kode to rule them all.",
   WRLM548B:
     "Finn de store brillene der du kan se deg selv i mange forskjellige farger. 👓 Ta på deg brillene og finn neste QR-kode.",
   TLK6P9DM:

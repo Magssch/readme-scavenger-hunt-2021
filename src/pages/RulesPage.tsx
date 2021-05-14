@@ -8,18 +8,13 @@ const RulesPage = () => {
       <p>
         <h2>Viktig, les dette!</h2>
         <h3>
-          Husk å notere deg passordene du får underveis, du vil trenge dette
-          passordet når du finner neste QR-kode. Ta gjerne skjermbilde av både
-          gåten og passordet når du finner en QR-kode, slik at du har dette lett
-          tilgjengelig senere.
+          Konkurransen er dessverre over for i år. Takk til de som deltok,
+          kanskje vi jaktes til neste år?
         </h3>
-      </p>
-      <p>
-        Kommer du deg ikke lengre? Har du lett overalt, men finner ingen
-        QR-kode? Det er ingen garanti for at noen finner alle kodene. Send et
-        bilde av den siste QR-koden du finner til{" "}
-        <b>scavengerhunt[at]abakus.no</b>, så kan du fortsatt være med i
-        trekningen! Vi kan også gi deg et hint dersom du ønsker det.
+        <h2>
+          Du kan fortsatt prøve å finne første kode ved å løse oppgaven på neste
+          side.
+        </h2>
       </p>
       <br />
       <p
